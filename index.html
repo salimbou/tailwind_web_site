@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learn tailwind css</title>
+    <!-- remix icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <link rel="stylesheet" href="../dist/style.css">
+</head>
+<body>
+    <nav class="container mx-auto p-2">
+        <div class="flex justify-between items-center">
+            <div class="bordred rounded-full overflow-hidden">
+                <img src="./dist/images/img-3.png" alt="tailwind" width="64px" class="object-cover" >
+            </div>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#" class="text-slate-700 hover:text-slate-900">Portfolio</a>
+                <a href="#" class="text-slate-700">About</a>
+                <a href="#" class="text-slate-700">Contact</a>
+                <a href="#" class="text-slate-700">Social</a>
+                <a href="" class="rounded-full py-2 px-6 text-white bg-orange-500 hover:bg-slate-900">Call Me</a>
+            </div>
+            <button class="md:hidden" id="mobile-btn">
+                <i class="ri-menu-line text-3xl"></i>
+            </button>
+        </div>
+        <div class="md:hidden">
+            <div id="mobile-menu" class="absolute flex hidden items-center flex-col bg-gray-50 py-8 left-6 right-6 space-y-4 border-gray-300 transition ease-in-out delay-5000">
+                <a href="#" class="text-slate-700 hover:text-slate-900">Portfolio</a>
+                <a href="#" class="text-slate-700">About</a>
+                <a href="#" class="text-slate-700">Contact</a>
+                <a href="#" class="text-slate-700">Social</a>
+                <a href="" class="rounded-full py-2 px-6 text-white bg-orange-500 hover:bg-slate-900">Call Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="container mx-auto p-2 space-x-6 flex flex-col-reverse md:flex-row">
+            <div class="md:w-1/2 bg-slate-200 flex flex-col space-y-6 justify-center py-8 px-8 text-center md:text-left">
+                <h1 class="font-bold text-3xl  md:text-5xl">Rapidly build modern websites without ever leaving your HTML.</h1>
+                <p>
+                    A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.
+                </p>
+                <a href="" class="rounded-full py-2 px-6 text-white bg-orange-500 hover:bg-slate-900 self-center md:self-start">Get Started</a>
+            </div>
+            <div class="md:w-1/2">
+                <img src="./dist/images/hero_image.svg" alt="tailwind hero image">
+            </div>
+        </div>
+    </section>
+    <section id="autor">
+        <div class="container text-center mx-auto py-32">
+            <h2 class="text-4xl font-bold">"Best Practices" don't actually work.</h2>
+            <p class="mt-8 max-w-5xl mx-auto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto similique ducimus excepturi, voluptatibus dolores soluta non illum, facere, debitis recusandae obcaecati? Rem quidem recusandae explicabo labore reiciendis perferendis magnam quae!
+            </p>
+
+            <div class="mt-10 flex flex-col  space-x-0  space-y-5 md:flex-row md:space-x-5 md:space-y-0">
+                <div class="bg-slate-200 md:w-1/3 flex items-center flex-col p-6 space-y-2 rounded-lg border border-slate-300">
+                    <img src="./dist/images/adam.jpg" alt="Adam Sandler creator tailwind" class="rounded-full w-16 -mt-12">
+                    <h5 class="font-bold text-lg text-slate-900">Adam Sandler</h5>
+                    <p class="leading-5 text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum ratione id magnam accusamus libero esse ipsam quasi commodi itaque animi.</p>
+                </div>
+                <div class="bg-slate-200 md:w-1/3 flex items-center flex-col p-6 space-y-2 rounded-lg border border-slate-300">
+                    <img src="./dist/images/adam.jpg" alt="Adam Sandler creator tailwind" class="rounded-full w-16 -mt-12">
+                    <h5 class="font-bold text-lg text-slate-900">Adam Sandler</h5>
+                    <p class="leading-5 text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum ratione id magnam accusamus libero esse ipsam quasi commodi itaque animi.</p>
+                </div>
+                <div class="bg-slate-200 md:w-1/3 flex items-center flex-col p-6 space-y-2 rounded-lg border border-slate-300">
+                    <img src="./dist/images/adam.jpg" alt="Adam Sandler creator tailwind" class="rounded-full w-16 -mt-12">
+                    <h5 class="font-bold text-lg text-slate-900">Adam Sandler</h5>
+                    <p class="leading-5 text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum ratione id magnam accusamus libero esse ipsam quasi commodi itaque animi.</p>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <footer class="bg-slate-900">
+        <div class="container mx-auto text-white py-10 px-5 flex flex-col-reverse md:flex-row justify-between space-y-8">
+            <div class="flex flex-col items-center justify-between space-y-10 md:space-y-2 md:items-start
+            ">
+                <div class="container text-center">
+                    <img src="./dist/images/img-3.png" alt="logo" class="h-8 text-center">
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#"><i class="ri-facebook-line text-3xl"></i></a>
+                    <a href="#"><i class="ri-instagram-line text-3xl"></i></a>
+                    <a href="#"><i class="ri-youtube-line text-3xl"></i></a>
+                    <a href="#"><i class="ri-linkedin-line text-3xl"></i></a>
+                </div>
+            </div>
+            <div class="flex justify-around space-x-32">
+                <div class="flex flex-col space-y-3">
+                    <a href="#" class="hover:text-slate-300">Home</a>
+                    <a href="#" class="hover:text-slate-300">About</a>
+                    <a href="#" class="hover:text-slate-300">Contact</a>
+                </div>
+                <div class="flex flex-col space-y-3">
+                    <a href="#" class="hover:text-slate-300">Credits</a>
+                    <a href="#" class="hover:text-slate-300">Privacy</a>
+                    <a href="#" class="hover:text-slate-300">Imprints</a>
+                </div>
+            </div>
+            <div class="flex flex-col justify-between">
+                <form action="#">
+                    <input type="text" placeholder="Subscribe To New Letter" class="flex-1 md:text-xl py-2 px-6 rounded-full">
+                    <button class="bg-orange-500 hover:bg-slate-500 text-white md:text-xl py-2 px-4 rounded-full">GO!</button>
+                </form>
+                <div class="hidden md:block">
+                    Copyrigth &copy; 2024 ,All Right Reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./dist/js/script.js"></script>
+</body>
+</html>
